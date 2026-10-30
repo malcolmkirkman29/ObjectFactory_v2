@@ -14,10 +14,17 @@ public class Pumpkin {
     //Special method constructor
     //Name has to match the class name
     //Do not use void
-    public Pumpkin(){
+    public Pumpkin(int pSize, String pColor, boolean pJackolantern){
         color = "orange";
-        pumpkinSize = 10;
+        pumpkinSize = pSize;
         isAJackolantern = false;
+    }
 
+    //todo: make a method called printInfo()
+
+    public void printInfo(){
+        System.out.println("The pumpkin's color is " + color + ".");
+        System.out.println("The pumpkin is " + pumpkinSize + " feet wide.");
+        System.out.println("It is " + isAJackolantern + " that the pumpkin is a Jack 'o lantern.");
     }
 }
